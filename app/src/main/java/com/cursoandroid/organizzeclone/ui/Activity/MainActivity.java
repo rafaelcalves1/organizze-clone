@@ -10,23 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.cursoandroid.organizzeclone.R;
-import com.cursoandroid.organizzeclone.config.ConfiguracaoFirebase;
+import com.cursoandroid.organizzeclone.data.datasource.ConfiguracaoFirebase;
 import com.cursoandroid.organizzeclone.ui.adapter.ApresentacaoPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.firebase.auth.FirebaseAuth;
-
-
-
-/*
-    app:layout_constraintEnd_toEndOf="@id/view_header"
-    app:layout_constraintStart_toStartOf="@id/view_header"
-    app:layout_constraintTop_toTopOf="@id/view_header"
-
-    esses comandos podem utilizar uma referencia sendo objeto ou outro layout dentro da tela de referencia
-    utilizado no xml.
-
- */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
-
         configuraBotaoPular();
         configuraSliderDeApresentacao();
     }
@@ -87,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void verificarUsuarioLogado() {
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
+        //autenticacao.signOut();
         if (autenticacao.getCurrentUser() != null) {
             abrirTelaPrincipal();
         }

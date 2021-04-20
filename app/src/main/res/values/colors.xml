@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#696969</color>
-    <color name="textColor">#000000</color>
-    <color name="textColorSub">#696969</color>
-    <color name="colorBackground">#DCDCDC</color>
-    <color name="colorBackgroundHeaderLayout">#a0a0a0</color>
-    <color name="colorbutton">#949494</color>
+    <!-- Cores padrao! -->
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#484848</color>
+
+    <!-- Cores Textos! -->
+    <color name="colorTextPrincipal">#ffffff</color>
+    <color name="colorTextSub">#000000</color>
+    <color name="colorTextBt">#3E3D3D</color>
+    <color name="colorTextSaldoReceita">#01579b</color>
+    <color name="colorTextSaldoDespesa">#d50000</color>
+    <color name="colorTextSaldoLimite">#01579b</color>
+
+
+
+    <!-- Cores botões! -->
+    <color name="colorSecondary">#64dd17</color>
+    <color name="colorSecondaryDark">#1faa00</color>
+    <color name="colorSecondaryLight">#9cff57</color>
+
+    <!-- Cores Fundos! -->
     <color name="colorCardView">#DCDCDC</color>
+    <color name="transparente">#00FFFFFF</color>
+    <color name="colorFundoMasterCard">#a0a0a0</color>
+    <color name="colorDivider">#666666</color>
+
+    <!-- Cores Despesa! -->
+    <color name="colorPrimaryDespesa">#d50000</color>
+    <color name="colorPrimaryDespesaDark">#9b0000</color>
+    <color name="colorPrimaryDespesaAccent">#FF3131</color>
+
+    <!-- Cores Receitas! -->
+
+
 </resources>

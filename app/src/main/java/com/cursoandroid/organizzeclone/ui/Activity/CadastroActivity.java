@@ -10,8 +10,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.cursoandroid.organizzeclone.R;
-import com.cursoandroid.organizzeclone.config.ConfiguracaoFirebase;
-import com.cursoandroid.organizzeclone.model.Usuario;
+import com.cursoandroid.organizzeclone.data.datasource.ConfiguracaoFirebase;
+import com.cursoandroid.organizzeclone.ui.utils.Base64Custom;
+import com.cursoandroid.organizzeclone.data.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -73,6 +74,9 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    String idUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                    usuario.setIdUsuario(idUsuario);
+                    usuario.salvar();
                     finish();
                 }else{
                     String excecao = "";

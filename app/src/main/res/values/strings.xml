@@ -20,4 +20,9 @@
     <string name="texto_conectivo">ou</string>
     <string name="nome_usuario">Nome Usuario</string>
     <string name="saudacao_usuario">Saudação</string>
+    <string name="saldo_geral">Saldo geral</string>
+    <string name="meus_saldos">Meus saldos</string>
+    <string name="banco_inter">Banco Inter</string>
+    <string name="conta_corrente">Conta corrente</string>
+    <string name="tipos_categorias">Categorias</string>
 </resources>

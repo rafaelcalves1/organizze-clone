@@ -21,11 +21,12 @@
     <Button
         android:id="@+id/main_pular_button"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="35dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="18dp"
-        android:background="@drawable/borda_arredondada"
+        android:background="@drawable/borda_arredondada_botao"
         android:text="@string/pular"
+        android:textColor="@color/colorTextSub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

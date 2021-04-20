@@ -6,10 +6,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.cursoandroid.organizzeclone.ui.fragment.Apresentacao2Fragment;
-import com.cursoandroid.organizzeclone.ui.fragment.Apresentacao3Fragment;
-import com.cursoandroid.organizzeclone.ui.fragment.Apresentacao4Fragment;
-import com.cursoandroid.organizzeclone.ui.fragment.ApresentacaoFragment;
+import com.cursoandroid.organizzeclone.ui.fragment.viewpager.Apresentacao2Fragment;
+import com.cursoandroid.organizzeclone.ui.fragment.viewpager.Apresentacao3Fragment;
+import com.cursoandroid.organizzeclone.ui.fragment.viewpager.Apresentacao4Fragment;
+import com.cursoandroid.organizzeclone.ui.fragment.viewpager.ApresentacaoFragment;
 
 import java.util.ArrayList;
 import java.util.List;

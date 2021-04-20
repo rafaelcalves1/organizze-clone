@@ -1,75 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@color/colorAccent">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:elevation="0dp"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="20dp"
-            android:background="@color/colorBackgroundHeaderLayout"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
 
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/imagePerfilUsuario"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/foto_perfil"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/saudacaoTitle"
-                android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="32dp"
-                android:gravity="center"
-                android:text="@string/saudacao_usuario"
-                android:textColor="@color/textColor"
-                android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/imagePerfilUsuario"
-                app:layout_constraintTop_toTopOf="parent" />
+                >
 
-            <TextView
-                android:id="@+id/nomeUsuario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/nome_usuario"
-                android:textColor="@color/textColor"
-                android:textSize="19sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/saudacaoTitle"
-                app:layout_constraintTop_toBottomOf="@+id/saudacaoTitle" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagePerfilUsuario"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/foto_perfil"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/saudacaoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:gravity="center"
+                    android:text="@string/saudacao_usuario"
+                    android:textColor="@color/colorTextPrincipal"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imagePerfilUsuario"
+                    app:layout_constraintTop_toTopOf="@+id/imagePerfilUsuario" />
+
+                <TextView
+                    android:id="@+id/nomeUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/nome_usuario"
+                    android:textColor="@color/colorTextPrincipal"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/saudacaoTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/saudacaoTitle"
+                    tools:text="José" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_principal"
-        />
+    <include layout="@layout/content_principal" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <com.github.clans.fab.FloatingActionMenu
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+        app:menu_colorNormal="@color/colorSecondaryDark"
+        app:menu_colorPressed="@color/colorAccent"
+        fab:menu_icon="@drawable/ic_adicionar_fab">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_despesas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="adDespesa"
+            android:src="@drawable/ic_adicionar_fab"
+            app:fab_colorNormal="@color/colorPrimaryDespesa"
+            app:fab_colorPressed="@color/colorAccent"
+            fab:fab_label="Despesa"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="adReceita"
+            android:src="@drawable/ic_adicionar_fab"
+            app:fab_colorNormal="@color/colorSecondary"
+            app:fab_colorPressed="@color/colorAccent"
+            fab:fab_label="Receita"
+            fab:fab_size="mini" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

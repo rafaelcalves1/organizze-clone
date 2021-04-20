@@ -1,4 +1,4 @@
-package com.cursoandroid.organizzeclone.ui.fragment;
+package com.cursoandroid.organizzeclone.ui.fragment.viewpager;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,12 +11,12 @@ import androidx.fragment.app.Fragment;
 
 import com.cursoandroid.organizzeclone.R;
 
-public class Apresentacao2Fragment extends Fragment {
+public class Apresentacao4Fragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.intro_2, container, false);
+        return inflater.inflate(R.layout.intro_4, container,false);
     }
 
     @Override

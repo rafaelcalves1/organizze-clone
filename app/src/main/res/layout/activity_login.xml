@@ -4,16 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="10dp"
+    android:background="@color/colorAccent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp">
 
     <ImageView
         android:id="@+id/logo_semi_login"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/organizze" />
+        app:srcCompat="@drawable/ic_organizze"
+        app:tint="@color/colorSecondary"
+        tools:ignore="VectorDrawableCompat" />
 
 
     <TextView
@@ -23,28 +26,28 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/mensagem_title_semi_login"
-        android:textColor="@color/textColor"
+        android:textColor="@color/colorTextPrincipal"
         android:textSize="20sp"
         android:textStyle="bold" />
+
     <TextView
         android:id="@+id/subTitle_semi_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/textColorSub"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:gravity="center"
         android:layout_marginTop="5dp"
+        android:gravity="center"
         android:text="@string/sub_title_semi_login"
-        />
+        android:textColor="@color/colorTextSub"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/textColor"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp">
+        android:paddingBottom="15dp"
+        android:textColorHint="@color/colorTextPrincipal">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editEmailLogin"
@@ -54,15 +57,15 @@
             android:drawablePadding="10dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/textColor" />
+            android:textColor="@color/colorTextSub" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/textColor"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp">
+        android:paddingBottom="15dp"
+        android:textColorHint="@color/colorTextPrincipal">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editSenhaLogin"
@@ -72,7 +75,7 @@
             android:drawablePadding="10dp"
             android:hint="Senha"
             android:inputType="textPassword"
-            android:textColor="@color/textColor"/>
+            android:textColor="@color/colorTextSub" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -80,10 +83,10 @@
         android:id="@+id/buttonEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/borda_arredondada"
+        android:background="@drawable/borda_arredondada_botao"
         android:onClick="btEntrar"
         android:text="@string/entrar"
-        android:textColor="@color/textColor" />
+        android:textColor="@color/colorTextSub" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -121,6 +124,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/texto_conectivo"
+            android:textColor="@color/colorTextSub"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -134,10 +138,10 @@
         android:id="@+id/buttonCadastreSe"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/borda_arredondada"
+        android:background="@drawable/borda_arredondada_botao"
         android:onClick="btCadastrar"
         android:text="@string/cadastre_se"
-        android:textColor="@color/textColor" />
+        android:textColor="@color/colorTextSub" />
 
     <TextView
         android:id="@+id/semi_login_text_termos_uso"
@@ -147,7 +151,7 @@
         android:gravity="center"
         android:onClick="btTermosDeUso"
         android:text="@string/termos_de_uso"
-        android:textColor="@color/textColorSub"
+        android:textColor="@color/colorTextSub"
         android:textSize="16sp" />
 
 </LinearLayout>

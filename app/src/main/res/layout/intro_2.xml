@@ -3,13 +3,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@color/colorAccent"
     android:gravity="center">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:scaleType="centerCrop"
         android:background="@drawable/dois"
         />
@@ -20,19 +20,19 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textStyle="bold"
-        android:textSize="18sp"
-        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrincipal"
         android:text="Saiba para onde está indo seu dinheiro"/>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:gravity="center"
         android:textStyle="bold"
         android:paddingTop="8dp"
-        android:textColor="@color/textColorSub"
+        android:textColor="@color/colorTextSub"
         android:text="Categorizando seus lançamentos e vendo o \n destino de cada centavo"/>
 
 </LinearLayout>

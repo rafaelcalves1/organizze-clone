@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OrganizzeClone</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="mensagem_senha_fraca">Digite uma senha mais forte</string>
+    <string name="mensagem_email_invalido">Digite um e-mail válido</string>
+    <string name="mensagem_conta_ja_existe">Essa conta já existe</string>
+    <string name="mensagem_erro_cadastro">Erro ao cadastrar usuário</string>
+    <string name="mensagem_preencha_senha">Preencha a senha</string>
+    <string name="mensagem_preencha_email">Preencha o e-mail</string>
+    <string name="pular">Pular</string>
+    <string name="mensagem_sub_semi_login">Nós já ajudamos milhares de pessoas \n a alcançarem seu equilíbrio financeiro, \n agora é a sua vez! Bora lá?</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="mensagem_title_semi_login">Bem vindo\n novamente! </string>
+    <string name="entrar">Entrar</string>
+    <string name="termos_de_uso"><b><u>Termos de uso</u></b></string>
+    <string name="sub_title_semi_login">Acesse sua conta para começar a \n controlar a sua grana!</string>
+    <string name="texto_conectivo">ou</string>
+    <string name="nome_usuario">Nome Usuario</string>
+    <string name="saudacao_usuario">Saudação</string>
+</resources>
